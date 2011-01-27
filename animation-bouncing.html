@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WebKit animation bounce easing</title>
+  <meta charset="utf-8" />
+
+  <style media="screen">
+
+    h1 {
+      position: absolute;
+      left: 10px;
+      top: 200px;
+      -webkit-animation: bounce 1s infinite ;
+    }
+
+    @-webkit-keyframes bounce {
+        0% { -webkit-transform: translate3d(0,   0px,0); 
+             -webkit-animation-timing-function: ease-out; }
+       50% { -webkit-transform: translate3d(0,-150px,0); 
+             -webkit-animation-timing-function: ease-in; }
+      100% { -webkit-transform: translate3d(0,   0px,0); }
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1>Bouncing</h1>
+
+http://dropshado.ws/post/932038256/webkit-animation-bounce-easing
+</body>
+</html>
