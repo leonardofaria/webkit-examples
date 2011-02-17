@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type='text/css'>
+		#animation {
+			background:red;
+			-webkit-animation:pulse 3s alternate infinite;
+		}
+		#animation:hover {
+			-webkit-animation-play-state:paused;
+		}
+
+		@-webkit-keyframes pulse {
+			0% {
+				width:100px;
+				height:100px;
+			}
+			100% {
+				width:200px;
+				height:200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="animation">Hover Over Me To Pause</div>
+</body>
+</html>
